@@ -1,0 +1,84 @@
+# =============================================================================
+# ШРИФТ (JetBrainsMono Nerd Font)
+# =============================================================================
+font-family = "JetBrainsMono Nerd Font"
+font-style = "Medium"
+font-style-bold = "Bold"
+font-style-italic = "Italic"
+font-style-bold-italic = "Bold Italic"
+font-size = 17
+font-thicken = true
+
+# =============================================================================
+# ЦВЕТОВАЯ СХЕМА (Solarized Light Full Palette)
+# =============================================================================
+# Основные цвета фона и текста
+background = #fdf6e3
+foreground = #657b83
+
+# Полная палитра ANSI для сочности (ls, git, nvim)
+palette = 0=#eee8d5
+palette = 1=#dc322f
+palette = 2=#859900
+palette = 3=#b58900
+palette = 4=#268bd2
+palette = 5=#d33682
+palette = 6=#2aa198
+palette = 7=#073642
+palette = 8=#fdf6e3
+palette = 9=#cb4b16
+palette = 10=#93a1a1
+palette = 11=#839496
+palette = 12=#657b83
+palette = 13=#6c71c4
+palette = 14=#586e75
+palette = 15=#002b36
+
+# =============================================================================
+# КУРСОР
+# =============================================================================
+cursor-style = block
+cursor-style-blink = false
+cursor-color = #586e75
+
+# Отключаем перехват курсора оболочкой (чтобы всегда был block)
+shell-integration-features = no-cursor
+
+# =============================================================================
+# ОКНО И ИНТЕРФЕЙС
+# =============================================================================
+window-padding-x = 8
+window-padding-y = 8
+window-decoration = false
+
+# Размеры в символах
+window-width = 110
+window-height = 30
+
+# Мышь
+mouse-hide-while-typing = true
+
+# =============================================================================
+# КАСТОМНЫЕ БИНДИНГИ (Alacritty Style)
+# =============================================================================
+# Новое окно
+keybind = cmd+n=new_window
+
+# Навигация по словам (Cmd+J / Cmd+K)
+keybind = cmd+j=text:\x1bb
+keybind = cmd+k=text:\x1bf
+
+# В начало и конец строки (Cmd+Shift+J / Cmd+Shift+K)
+keybind = cmd+shift+j=text:\x01
+keybind = cmd+shift+k=text:\x05
+
+# Удаление (Cmd+Backspace — слово, Cmd+Shift+Backspace — строка)
+keybind = cmd+backspace=text:\x17
+keybind = cmd+shift+backspace=text:\x15
+
+# Ctrl + / (комментирование)
+keybind = ctrl+slash=text:\x1f
+
+# Копирование / Вставка
+keybind = cmd+c=copy_to_clipboard
+keybind = cmd+v=paste_from_clipboard

@@ -1,0 +1,42 @@
+Alacritty.app
+AltTab.app
+Blender.app
+Brave Browser.app
+CapCut.app
+CleanShot X.app
+Cursor Pro.app
+DB Browser for SQLite.app
+DaVinci Resolve.app
+Docker.app
+Figma.app
+FileZilla.app
+Hammerspoon.app
+Handy.app
+Ice.app
+Karabiner-Elements.app
+Karabiner-EventViewer.app
+KeePassXC.app
+KeyCastr.app
+KiCad
+LibreOffice.app
+MAMP
+MAMP PRO.app
+Maccy.app
+Min.app
+NCALayer.app
+OBS.app
+Pearcleaner.app
+PyCharm.app
+Raycast.app
+Rectangle.app
+Safari.app
+SmoothCSV.app
+Stats.app
+Sublime Text.app
+Telegram.app
+The Unarchiver.app
+Utilities
+Visual Studio Code.app
+Vpnify.app
+iTerm.app
+uBlock Origin Lite.app

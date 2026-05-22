@@ -1,0 +1,56 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/solarized_light.toml"
+]
+
+[window]
+padding = { x = 8, y = 8 }
+dynamic_padding = true
+decorations = "buttonless"
+blur = false
+dimensions = { columns = 110, lines = 29 }
+
+[colors.primary]
+background = '#FDF6E3'
+foreground = '#657B83'
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Medium" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 17.0
+offset = { x = 0, y = 2 }
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key = "N", mods = "Command", action = "CreateNewWindow" },
+  { key = "V", mods = "Command", action = "Paste" },
+  { key = "C", mods = "Command", action = "Copy" },
+
+  # Cmd + J / K — перемещение по словам
+  { key = "J", mods = "Command", chars = "\u001bb" },
+  { key = "K", mods = "Command", chars = "\u001bf" },
+
+  # Cmd + Shift + J / K — в начало и в конец строки
+  { key = "J", mods = "Command|Shift", chars = "\u0001" },
+  { key = "K", mods = "Command|Shift", chars = "\u0005" },
+
+  # Удалить одно слово (Cmd + Delete) — ТЕПЕРЬ БУДЕТ РАБОТАТЬ ВЕЗДЕ
+  { key = "Back", mods = "Command", chars = "\u0017" },
+
+  # Удалить всю строку (Cmd + Shift + Delete)
+  { key = "Back", mods = "Command|Shift", chars = "\u0015" },
+
+  { key = "Slash", mods = "Control", chars = "\u001f" },
+]

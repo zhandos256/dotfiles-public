@@ -1,0 +1,52 @@
+# Системные и стандартные приложения
+alt - f : open -a finder                              # Открыть Finder
+alt - s : open -a safari                              # Открыть Safari
+alt - c : open -a calculator                          # Калькулятор
+alt - n : open -a notes                               # Заметки
+alt - 0 : open -a settings                            # Системные настройки
+alt - l : open -a /System/Applications/Launchpad.app  # Launchpad
+alt - i : open -a /System/Applications/iPhone\ Mirroring.app # Повтор экрана iPhone
+
+# Разработка и терминалы
+alt - 1 : open -a /Applications/Visual\ Studio\ Code.app
+alt - 2 : open -a /Applications/Cursor.app
+alt - 3 : open -a terminal
+alt - a : open -a /Applications/Alacritty.app
+alt + shift - s : open -a /Applications/Sublime\ Text.app
+
+# Работа с данными и окружением
+alt - q : open /Applications/DB\ Browser\ for\ SQLite.app
+alt - z : open -a /Applications/FileZilla.app
+alt - m : open -a /Applications/MAMP/MAMP.app
+alt + shift - d : open -a /Applications/Docker.app
+
+# Браузеры, медиа и соцсети
+alt - b : open -a /Applications/Brave\ Browser.app
+alt - y : open -a safari https://translate.google.kz  # Переводчик в Safari
+alt - d : open -a /Applications/DaVinci\ Resolve.app  # DaVinci Resolve
+alt - o : open -a /Applications/OBS.app
+alt - t : open -a /Applications/Telegram.app
+
+# Утилиты
+alt - k : open -a /Applications/KeePassXC.app
+alt + shift - n : open -a /Applications/Numi.app      # Умный калькулятор Numi
+
+# Перезагрузить сервис yabai (если что-то зависло)
+alt - r : yabai --restart-service
+
+# Повернуть раскладку на 90 градусов (Rotate)
+alt + shift - r : yabai -m space --rotate 90
+
+# Переключение фокуса между окнами (HJKL)
+alt + shift - h : yabai -m window --focus west   # Фокус влево
+alt + shift - j : yabai -m window --focus south  # Фокус вниз
+alt + shift - k : yabai -m window --focus north  # Фокус вверх
+alt + shift - l : yabai -m window --focus east   # Фокус вправо
+
+# Управление размером и состоянием окна
+# Развернуть текущее окно на весь экран (Zoom)
+alt - return : yabai -m window --toggle zoom-fullscreen
+
+# Переключить режим "плавающего" окна (Float)
+# При включении окно центрируется по сетке 8x8
+alt + shift - return : yabai -m window --toggle float --grid 8:8:1:1:6:6

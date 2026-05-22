@@ -1,0 +1,43 @@
+yabai -m config layout bsp
+
+# Автоматический баланс: при закрытии окна остальные расширяются, чтобы занять место.
+yabai -m config auto_balance off
+
+# Соотношение сторон при разделении (0.50 — ровно пополам)
+yabai -m config split_ratio 0.50
+
+# Отступы от краев экрана
+yabai -m config top_padding 5
+yabai -m config bottom_padding 5
+yabai -m config left_padding 5
+yabai -m config right_padding 5
+
+# Расстояние между самими окнами
+yabai -m config window_gap 5
+
+# Тени окон (вкл/выкл)
+yabai -m config window_shadow on
+
+# Фокус следует за курсором мыши (autofocus — просто активирует окно)
+yabai -m config focus_follows_mouse autofocus
+
+# Клавиша-модификатор для перетаскивания окон мышью (здесь установлена 'fn' или 'caps lock' если забиндено)
+# Позволяет зажать клавишу и левой кнопкой мыши двигать тайловое окно.
+yabai -m config mouse_modifier fn
+yabai -m config mouse_action1 move
+yabai -m config mouse_action2 resize
+
+# Что делать при перетаскивании одного окна на другое: 'swap' (поменять местами)
+yabai -m config mouse_drop_action swap
+
+# Приложения, которые НЕ должны подчиняться тайлингу (будут плавать поверх)
+yabai -m rule --add app="^Системные настройки$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Калькулятор$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Просмотр$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^iTerm2$" manage=off
+# OBS — жёстко плавающий + поверх всего
+yabai -m rule --add app="^OBS" manage=off sticky=off sub-layer=above opacity=1.0

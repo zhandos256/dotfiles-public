@@ -1,0 +1,48 @@
+# --- Секреты и безопасность (КРИТИЧНО) ---
+.ssh/
+*.pem
+*.key
+*.pub
+.netrc
+.gnupg/
+# Если используешь переменные окружения для API ключей
+.env
+.env.local
+
+# --- Системные файлы macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+
+# --- Конфиги приложений, которые могут содержать токены ---
+# Файлы сессий и истории (чтобы не палить, что ты вводил в терминале)
+.zsh_history
+.bash_history
+.python_history
+.viminfo
+.lesshst
+# Neovim/Vim логи и своп-файлы
+*.swp
+*.swo
+undo/
+shada/
+
+# --- Специфичные для твоего стека ---
+# Логи tmux
+tmux-client-*.log
+tmux-server-*.log
+
+# Кэш плагинов (их лучше скачивать заново через менеджер плагинов)
+.tmux/plugins/
+.oh-my-zsh/custom/plugins/*/
+.bundle/
+
+# --- Временные файлы ---
+*.log
+tmp/
+dist/
+node_modules/
+alacritty/themes
