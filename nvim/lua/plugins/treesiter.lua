@@ -17,8 +17,8 @@ return {
           -- Настройка режима выделения (по умолчанию 'v' - посимвольно)
           selection_modes = {
             ["@parameter.outer"] = "v", -- параметры выделяем посимвольно
-            ["@function.outer"] = "V", -- функции выделяем ПОСТРОЧНО (чтобы не терять скобки)
-            ["@class.outer"] = "V", -- классы тоже построчно
+            ["@function.outer"] = "V",  -- функции выделяем ПОСТРОЧНО (чтобы не терять скобки)
+            ["@class.outer"] = "V",     -- классы тоже построчно
           },
 
           -- Включать ли окружающие пробелы (false — выделять строго код)
@@ -102,10 +102,10 @@ return {
         incremental_selection = {
           enable = true,
           keymaps = {
-            init_selection = "<leader>ss", -- Начать выделение (start)
-            node_incremental = "<leader>si", -- Расширить до следующего узла кода (increment)
+            init_selection = "<leader>ss",    -- Начать выделение (start)
+            node_incremental = "<leader>si",  -- Расширить до следующего узла кода (increment)
             scope_incremental = "<leader>sc", -- Расширить до области видимости (scope)
-            node_decremental = "<leader>sd", -- Уменьшить область выделения (decrement)
+            node_decremental = "<leader>sd",  -- Уменьшить область выделения (decrement)
           },
         },
       })
