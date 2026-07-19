@@ -8,9 +8,10 @@ alt - l : open -a /System/Applications/Launchpad.app  # Launchpad
 alt - i : open -a /System/Applications/iPhone\ Mirroring.app # Повтор экрана iPhone
 
 # Разработка и терминалы
-alt - 1 : open -a /Applications/Visual\ Studio\ Code.app
-alt - 2 : open -a /Applications/Cursor.app
-alt - 3 : open -a terminal
+alt - 1: open -a /Applications/Visual\ Studio\ Code.app
+alt - 2: open -a /Applications/Cursor.app
+alt - 3: open -a /Applications/Codex.app
+alt + shift - t: open -a terminal
 alt - a : open -a /Applications/Alacritty.app
 alt + shift - s : open -a /Applications/Sublime\ Text.app
 
@@ -22,14 +23,17 @@ alt + shift - d : open -a /Applications/Docker.app
 
 # Браузеры, медиа и соцсети
 alt - b : open -a /Applications/Brave\ Browser.app
-alt - y : open -a safari https://translate.google.kz  # Переводчик в Safari
+alt - y : open -a safari https://translate.yandex.kz  # Переводчик в Safari
 alt - d : open -a /Applications/DaVinci\ Resolve.app  # DaVinci Resolve
 alt - o : open -a /Applications/OBS.app
+alt + shift - o : open -a /Applications/OrbStack.app
 alt - t : open -a /Applications/Telegram.app
+alt + shift - b : open -a /Applications/Borumi.app/
 
 # Утилиты
 alt - k : open -a /Applications/KeePassXC.app
 alt + shift - n : open -a /Applications/Numi.app      # Умный калькулятор Numi
+alt + shift - f : open -a /Applications/Figma.app      # Умный калькулятор Numi
 
 # Перезагрузить сервис yabai (если что-то зависло)
 alt - r : yabai --restart-service
