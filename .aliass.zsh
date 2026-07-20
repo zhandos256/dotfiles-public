@@ -44,8 +44,7 @@ alias aconf="nvim ~/.config/alacritty/alacritty.toml"
 alias jmeter="java -jar /Users/rzhandos/files/apache-jmeter-5.6.3/bin/ApacheJmeter.jar"
 
 # nvim
-alias v="nvim"
-alias nconf="nvim ~/.config/nvim/"
+alias nvimconf="nvim ~/.config/nvim/"
 
 # yabai
 alias yconf="nvim ~/.config/yabai/yabairc"
