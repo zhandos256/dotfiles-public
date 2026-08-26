@@ -1,6 +1,6 @@
 alias cls="clear"
 alias quit="exit"
-alias cat="bat --theme Coldark-Cold"
+alias cat="bat --theme gruvbox-light"
 alias o="open"
 alias c="pbcopy"
 alias hh="tldr"
@@ -13,7 +13,7 @@ alias zconf="nvim ~/.zshrc"
 alias zupd="source ~/.zshrc"
 
 # nvim
-alias vconf="nvim ~/.vimrc"
+alias vconf="vi ~/.vimrc"
 
 # nvim
 alias aliass="nvim ~/.aliass.zsh"
@@ -37,14 +37,15 @@ alias gs="git status"
 alias gl="git log"
 alias gd="git diff"
 
-# termi
-alias aconf="nvim ~/.config/alacritty/alacritty.toml"
-
 # jmeter
 alias jmeter="java -jar /Users/rzhandos/files/apache-jmeter-5.6.3/bin/ApacheJmeter.jar"
 
-# nvim
+alias aconf="nvim ~/.config/alacritty/alacritty.toml"
+
 alias nvimconf="nvim ~/.config/nvim/"
 
-# yabai
-alias yconf="nvim ~/.config/yabai/yabairc"
+alias oc="opencode"
+
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+
+alias s="open -a Safari"
