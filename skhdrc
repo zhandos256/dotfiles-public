@@ -12,7 +12,7 @@ alt - d : open -a /Applications/DaVinci\ Resolve.app
 alt - o : open -a /Applications/OBS.app
 alt - t : open -a /Applications/Telegram.app
 alt - k : open -a /Applications/KeePassXC.app
-alt - a: open -a /Applications/Alacritty.app
+alt - a: open -a /Applications/Ghostty.app
 alt - z: open -a /Applications/FileZilla.app
 alt - m: open -a /Applications/MacVim.app
 
@@ -29,3 +29,4 @@ alt - 0 : open -a settings
 alt - 1: open -a /Applications/Visual\ Studio\ Code.app
 alt - 2: open -a /Applications/Cursor.app
 alt - 3: open -a /Applications/Codex.app
+
